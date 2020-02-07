@@ -93,7 +93,6 @@ def make_pipeline():
         method='average'
     )  
     
-    # Here we combine our winsorized factors, z-scoring them to equalize their influence
     combined_factor = (
         #Original
         3*value_winsorized.zscore() + 
